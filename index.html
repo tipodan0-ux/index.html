@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tipo's Personal Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Tipo's Blog</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Slide 1">
+                <div class="slide-content">
+                    <h1>Welcome to My Personal Blog</h1>
+                    <p>Sharing my thoughts, experiences, and adventures</p>
+                    <a href="blog.html" class="btn">Read My Blog</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Slide 2">
+                <div class="slide-content">
+                    <h1>Explore My Photography</h1>
+                    <p>Capturing moments and memories from around the world</p>
+                    <a href="gallery.html" class="btn">View Gallery</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Slide 3">
+                <div class="slide-content">
+                    <h1>Get In Touch</h1>
+                    <p>Let's connect and share our stories</p>
+                    <a href="contact.html" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev-btn" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="featured-posts">
+        <div class="container">
+            <h2>Latest Posts</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post 1">
+                    <div class="post-content">
+                        <span class="post-category">Technology</span>
+                        <h3>The Future of Web Development</h3>
+                        <p>Exploring the latest trends and technologies shaping the web development landscape...</p>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                            <span><i class="fas fa-comments"></i> 5 Comments</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post 2">
+                    <div class="post-content">
+                        <span class="post-category">Travel</span>
+                        <h3>My Adventure in the Mountains</h3>
+                        <p>A breathtaking journey through the scenic mountain trails and hidden valleys...</p>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="fas fa-comments"></i> 8 Comments</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <img src="https://images.unsplash.com/photo-1495521821757-a2efb71c10c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Post 3">
+                    <div class="post-content">
+                        <span class="post-category">Lifestyle</span>
+                        <h3>Finding Balance in Daily Life</h3>
+                        <p>Tips and strategies for maintaining a healthy work-life balance in today's busy world...</p>
+                        <div class="post-meta">
+                            <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="fas fa-comments"></i> 12 Comments</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Me</h3>
+                    <p>I'm a passionate blogger sharing my experiences in technology, travel, and lifestyle. Join me on this journey!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Photography</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> tipodan0@example.com</p>
+                    <p><i class="fas fa-phone"></i> +256 758 488 728</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Tipo's Personal Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
